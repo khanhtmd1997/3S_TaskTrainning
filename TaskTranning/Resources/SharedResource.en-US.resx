@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msg_del" xml:space="preserve">
+    <value>You make sure you want to delete it?</value>
+  </data>
+  <data name="p_customer" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="p_error_table" xml:space="preserve">
+    <value>NOT DATA OF TABLE</value>
+  </data>
+  <data name="p_find" xml:space="preserve">
+    <value>Finded</value>
+  </data>
+  <data name="th_action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="th_address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="th_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="th_firstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="th_lastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="th_phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="th_zipCode" xml:space="preserve">
+    <value>ZipCode</value>
+  </data>
+  <data name="t_customer" xml:space="preserve">
+    <value>Page Customer</value>
+  </data>
+  <data name="a_back" xml:space="preserve">
+    <value>Back To List</value>
+  </data>
+  <data name="a_brand" xml:space="preserve">
+    <value>BRANDS</value>
+  </data>
+  <data name="a_category" xml:space="preserve">
+    <value>CATEGORIES</value>
+  </data>
+  <data name="a_customer" xml:space="preserve">
+    <value>CUSTOMERS</value>
+  </data>
+  <data name="a_home" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="a_logOut" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="a_product" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="a_stock" xml:space="preserve">
+    <value>STOCKS</value>
+  </data>
+  <data name="a_store" xml:space="preserve">
+    <value>STORES</value>
+  </data>
+  <data name="a_user" xml:space="preserve">
+    <value>USERS</value>
+  </data>
+  <data name="btn_close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btn_create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="btn_edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btn_login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btn_save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="h4_hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="lbl_address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="lbl_brandName" xml:space="preserve">
+    <value>Brand Name</value>
+  </data>
+  <data name="lbl_categoryName" xml:space="preserve">
+    <value>CategoryName</value>
+  </data>
+  <data name="lbl_city" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="lbl_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lbl_firstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lbl_fullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="lbl_isActive" xml:space="preserve">
+    <value>IsActive?</value>
+  </data>
+  <data name="lbl_lastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lbl_listPrice" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="lbl_modelYear" xml:space="preserve">
+    <value>Model Year</value>
+  </data>
+  <data name="lbl_password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lbl_phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lbl_picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="lbl_productName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lbl_quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="lbl_state" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="lbl_storeName" xml:space="preserve">
+    <value>Store Name</value>
+  </data>
+  <data name="lbl_street" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="lbl_zipCode" xml:space="preserve">
+    <value>ZipCode</value>
+  </data>
+  <data name="msg_DeleteBrandError" xml:space="preserve">
+    <value>Delete Brand Error</value>
+  </data>
+  <data name="msg_DeleteBrandSuccess" xml:space="preserve">
+    <value>Delete Brand Success</value>
+  </data>
+  <data name="msg_DeleteCategoryError" xml:space="preserve">
+    <value>Delete Category Error</value>
+  </data>
+  <data name="msg_DeleteCategorySuccess" xml:space="preserve">
+    <value>Delelte Category Success</value>
+  </data>
+  <data name="msg_DeleteCustomerError" xml:space="preserve">
+    <value>Delete Customer Error</value>
+  </data>
+  <data name="msg_DeleteCustomerSucces" xml:space="preserve">
+    <value>Delete Customer Success</value>
+  </data>
+  <data name="msg_DeleteProductError" xml:space="preserve">
+    <value>Delete Product Error</value>
+  </data>
+  <data name="msg_DeleteProductSuccess" xml:space="preserve">
+    <value>Delete Product Success</value>
+  </data>
+  <data name="msg_DeleteStockError" xml:space="preserve">
+    <value>Delete Stock Error</value>
+  </data>
+  <data name="msg_DeleteStockSuccess" xml:space="preserve">
+    <value>Delete Stock Success</value>
+  </data>
+  <data name="msg_DeleteStoreError" xml:space="preserve">
+    <value>Delete Store Error</value>
+  </data>
+  <data name="msg_DeleteStoreSuccess" xml:space="preserve">
+    <value>Delete Store Success</value>
+  </data>
+  <data name="msg_DeleteUserError" xml:space="preserve">
+    <value>Delete User Error</value>
+  </data>
+  <data name="msg_DeleteUserSuccess" xml:space="preserve">
+    <value>Delete User Success</value>
+  </data>
+  <data name="msg_EditBrandError" xml:space="preserve">
+    <value>Edit Brand Error</value>
+  </data>
+  <data name="msg_EditBrandSuccess" xml:space="preserve">
+    <value>Edit Brand Success</value>
+  </data>
+  <data name="msg_EditCategoryError" xml:space="preserve">
+    <value>Edit Category Error</value>
+  </data>
+  <data name="msg_EditCategorySuccess" xml:space="preserve">
+    <value>Edit Category Success</value>
+  </data>
+  <data name="msg_EditCustomerError" xml:space="preserve">
+    <value>Edit Customer Error</value>
+  </data>
+  <data name="msg_EditCustomerSucces" xml:space="preserve">
+    <value>Edit Customer Success</value>
+  </data>
+  <data name="msg_EditProductError" xml:space="preserve">
+    <value>Edit Product Error</value>
+  </data>
+  <data name="msg_EditProductSuccess" xml:space="preserve">
+    <value>Edit Product Success</value>
+  </data>
+  <data name="msg_EditStockError" xml:space="preserve">
+    <value>Edit Stock Error</value>
+  </data>
+  <data name="msg_EditStockSuccess" xml:space="preserve">
+    <value>Edit Stock Success</value>
+  </data>
+  <data name="msg_EditStoreError" xml:space="preserve">
+    <value>Edit Store Error</value>
+  </data>
+  <data name="msg_EditStoreSuccess" xml:space="preserve">
+    <value>Edit Store Success</value>
+  </data>
+  <data name="msg_EditUserError" xml:space="preserve">
+    <value>Edit User Error</value>
+  </data>
+  <data name="msg_EditUserPasswordError" xml:space="preserve">
+    <value>Edit User Password Error</value>
+  </data>
+  <data name="msg_EditUserPasswordSuccess" xml:space="preserve">
+    <value>Edit User Password Success</value>
+  </data>
+  <data name="msg_EditUserSuccess" xml:space="preserve">
+    <value>Edit User Success</value>
+  </data>
+  <data name="msg_ErrorLogin" xml:space="preserve">
+    <value>Login Fail! Email Or Password is Wrong</value>
+  </data>
+  <data name="msg_NewBrandError" xml:space="preserve">
+    <value>Add Brand Error</value>
+  </data>
+  <data name="msg_NewBrandSuccess" xml:space="preserve">
+    <value>Add Brand Success</value>
+  </data>
+  <data name="msg_NewCategoryError" xml:space="preserve">
+    <value>Add Category Error</value>
+  </data>
+  <data name="msg_NewCategorySuccess" xml:space="preserve">
+    <value>Add Category Success</value>
+  </data>
+  <data name="msg_NewCustomerError" xml:space="preserve">
+    <value>Add Customer Error</value>
+  </data>
+  <data name="msg_NewCustomerSuccess" xml:space="preserve">
+    <value>Add Customer Success</value>
+  </data>
+  <data name="msg_NewProductError" xml:space="preserve">
+    <value>Add Product Error</value>
+  </data>
+  <data name="msg_NewProductSuccess" xml:space="preserve">
+    <value>Add Product Success</value>
+  </data>
+  <data name="msg_NewStockError" xml:space="preserve">
+    <value>Add Stock Error</value>
+  </data>
+  <data name="msg_NewStockSuccess" xml:space="preserve">
+    <value>Add Stock Success</value>
+  </data>
+  <data name="msg_NewStoreError" xml:space="preserve">
+    <value>Add Store Error</value>
+  </data>
+  <data name="msg_NewStoreSuccess" xml:space="preserve">
+    <value>Add Store Success</value>
+  </data>
+  <data name="msg_NewUserError" xml:space="preserve">
+    <value>Add User Error</value>
+  </data>
+  <data name="msg_NewUserSuccess" xml:space="preserve">
+    <value>Add User Success</value>
+  </data>
+  <data name="pld_address" xml:space="preserve">
+    <value>Please enter address</value>
+  </data>
+  <data name="pld_categoryName" xml:space="preserve">
+    <value>Please enter category name</value>
+  </data>
+  <data name="pld_city" xml:space="preserve">
+    <value>Please enter City</value>
+  </data>
+  <data name="pld_email" xml:space="preserve">
+    <value>Please enter email</value>
+  </data>
+  <data name="pld_firstName" xml:space="preserve">
+    <value>Please enter first name</value>
+  </data>
+  <data name="pld_fullname" xml:space="preserve">
+    <value>Please enter fullname</value>
+  </data>
+  <data name="pld_lastName" xml:space="preserve">
+    <value>Please enter last name</value>
+  </data>
+  <data name="pld_listPrice" xml:space="preserve">
+    <value>Please enter list price</value>
+  </data>
+  <data name="pld_modelYear" xml:space="preserve">
+    <value>Please enter model year</value>
+  </data>
+  <data name="pld_password" xml:space="preserve">
+    <value>Please enter passowrd</value>
+  </data>
+  <data name="pld_pasword" xml:space="preserve">
+    <value>Please enter password</value>
+  </data>
+  <data name="pld_phone" xml:space="preserve">
+    <value>Please enter phone</value>
+  </data>
+  <data name="pld_productName" xml:space="preserve">
+    <value>Please enter product name</value>
+  </data>
+  <data name="pld_quantity" xml:space="preserve">
+    <value>Please enter quantity</value>
+  </data>
+  <data name="pld_storeName" xml:space="preserve">
+    <value>Please enter Store Name</value>
+  </data>
+  <data name="pld_street" xml:space="preserve">
+    <value>Please enter Srteet</value>
+  </data>
+  <data name="pld_zipCode" xml:space="preserve">
+    <value>Please enter ZipCode</value>
+  </data>
+  <data name="p_brand" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+  <data name="p_category" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="p_language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="p_product" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="p_stock" xml:space="preserve">
+    <value>Stocks</value>
+  </data>
+  <data name="p_store" xml:space="preserve">
+    <value>Stores</value>
+  </data>
+  <data name="p_user" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="sp_example" xml:space="preserve">
+    <value>Example</value>
+  </data>
+  <data name="sp_home" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="sp_management" xml:space="preserve">
+    <value>MANAGEMENT</value>
+  </data>
+  <data name="th_brandName" xml:space="preserve">
+    <value>Brand Name</value>
+  </data>
+  <data name="th_categoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="th_city" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="th_fullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="th_isActive" xml:space="preserve">
+    <value>IsActive?</value>
+  </data>
+  <data name="th_listPrice" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="th_modelYear" xml:space="preserve">
+    <value>Model Year</value>
+  </data>
+  <data name="th_picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="th_productName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="th_quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="th_state" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="th_storeName" xml:space="preserve">
+    <value>Store Name</value>
+  </data>
+  <data name="th_street" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="t_brand" xml:space="preserve">
+    <value>Page Brand</value>
+  </data>
+  <data name="t_category1" xml:space="preserve">
+    <value>Page Category</value>
+  </data>
+  <data name="t_create" xml:space="preserve">
+    <value>Page Create</value>
+  </data>
+  <data name="t_edit" xml:space="preserve">
+    <value>Page Edit</value>
+  </data>
+  <data name="t_login" xml:space="preserve">
+    <value>Page Login</value>
+  </data>
+  <data name="t_product" xml:space="preserve">
+    <value>Page Product</value>
+  </data>
+  <data name="t_stock" xml:space="preserve">
+    <value>Page Stock</value>
+  </data>
+  <data name="t_store" xml:space="preserve">
+    <value>Page Store</value>
+  </data>
+  <data name="t_user" xml:space="preserve">
+    <value>Page User</value>
+  </data>
+  <data name="vld_alreadyexists" xml:space="preserve">
+    <value>Already Exists</value>
+  </data>
+  <data name="vld_equalpassword" xml:space="preserve">
+    <value>Confirm Password must equal New Password</value>
+  </data>
+  <data name="vld_formatemail" xml:space="preserve">
+    <value>Must be format by email</value>
+  </data>
+  <data name="vld_letterandnumber" xml:space="preserve">
+    <value>Including letters and numbers</value>
+  </data>
+  <data name="vld_max100characters" xml:space="preserve">
+    <value>Maxlength 100 characters</value>
+  </data>
+  <data name="vld_min6characters" xml:space="preserve">
+    <value>Minlength 6 characters</value>
+  </data>
+  <data name="vld_notnull" xml:space="preserve">
+    <value>Not Null</value>
+  </data>
+  <data name="vld_toonefrommfifty" xml:space="preserve">
+    <value>Range from 1 to 50 characters</value>
+  </data>
+  <data name="vld_toonefromonehundred" xml:space="preserve">
+    <value>Range from 1 to 100 characters</value>
+  </data>
+</root>

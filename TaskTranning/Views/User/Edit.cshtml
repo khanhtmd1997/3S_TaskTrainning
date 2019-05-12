@@ -1,0 +1,65 @@
+﻿@model TaskTranning.ViewModels.EditUserViewModel
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_edit");
+    Layout = "_NavbarDataTable";
+}
+<div class="formbody">
+    <h1>@Localizer.GetLocalizedHtmlString("t_edit")</h1>
+    <div id="form">
+        @if (ViewData["errorMessage"] != null)
+        {
+            <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5>
+        }
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Email">@Localizer.GetLocalizedHtmlString("lbl_email") * :</label>
+                <input asp-for="Email" hidden=""/>
+                <h5>@Html.DisplayFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })</h5>
+                <span asp-validation-for="Email" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName">@Localizer.GetLocalizedHtmlString("lbl_fullName") * :</label>
+                <input asp-for="FullName" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_fullname") />
+                <span asp-validation-for="FullName" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone">@Localizer.GetLocalizedHtmlString("lbl_phone") * :</label>
+                <input asp-for="Phone" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_phone") />
+                <span asp-validation-for="Phone" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address">@Localizer.GetLocalizedHtmlString("lbl_address") * :</label>
+                <input asp-for="Address" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_address") />
+                <span asp-validation-for="Address" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Picture">@Localizer.GetLocalizedHtmlString("lbl_picture") * :</label>
+                <input asp-for="Picture" type="file"/>
+                <span asp-validation-for="Picture" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoreId">@Localizer.GetLocalizedHtmlString("lbl_storeName") * :</label>
+                <select asp-for="StoreId" asp-items="@ViewBag.StoreId" class="form-control"></select>
+                <span asp-validation-for="StoreId" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsActive">@Localizer.GetLocalizedHtmlString("lbl_isActive"):</label>
+                @Html.EditorFor(model => model.IsActive, new {htmlAttributes = new {@class = "form-control"}})
+                <span asp-validation-for="IsActive" class="form-text text-danger"></span>
+            </div>
+            <div class="container">
+                <div class="row button">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">@Localizer.GetLocalizedHtmlString("btn_edit")</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="list-group link">
+            <a class="text-primary" asp-action="Index">@Localizer.GetLocalizedHtmlString("a_back")</a>
+        </div>
+    </div>
+</div>

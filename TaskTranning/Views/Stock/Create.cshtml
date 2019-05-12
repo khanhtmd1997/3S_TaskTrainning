@@ -1,0 +1,44 @@
+﻿@model TaskTranning.ViewModels.StockViewModel.StockViewModel
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_create");
+    Layout = "_NavbarDataTable";
+}
+<div class="formbody">
+    <h1>@Localizer.GetLocalizedHtmlString("t_create Page")</h1>
+    <div id="form">
+        @if (ViewData["errorMessage"] != null)
+        {
+            <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5>
+        }
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="StoreId">@Localizer.GetLocalizedHtmlString("lbl_storeName") * :</label>
+                <select asp-for="StoreId" asp-items="@ViewBag.StoreId" class="form-control"></select>
+                <span asp-validation-for="StoreId" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductId">@Localizer.GetLocalizedHtmlString("lbl_productName") * :</label>
+                <select asp-for="ProductId" asp-items="@ViewBag.ProductId" class="form-control"></select>
+                <span asp-validation-for="ProductId" class="form-text text-danger"></span>
+            </div>
+    
+            <div class="form-group">
+                <label asp-for="Quantity">@Localizer.GetLocalizedHtmlString("lbl_quantity") * :</label>
+                <input asp-for="Quantity" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_quantity")/>
+                <span asp-validation-for="Quantity" class="form-text text-danger"></span>
+            </div>
+            <div class="container">
+                <div class="row button">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">@Localizer.GetLocalizedHtmlString("btn_create")</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="list-group link">
+            <a class="text-primary" asp-action="Index">@Localizer.GetLocalizedHtmlString("Back to List")</a>
+        </div>
+    </div>
+</div>

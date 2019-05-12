@@ -1,0 +1,34 @@
+﻿@model TaskTranning.AllViewModels.Category.CategoryViewModel
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_create");
+    Layout = "_NavbarDataTable";
+}
+<div class="formbody">
+    <h1>@Localizer.GetLocalizedHtmlString("t_create")</h1>
+    <div id="form">
+        @if (ViewData["errorMessage"] != null)
+        {
+            <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5>
+        }
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label asp-for="CategoryName">@Localizer.GetLocalizedHtmlString("lbl_categoryName") * :</label>
+                <input asp-for="CategoryName" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_categoryName")/>
+                <span asp-validation-for="CategoryName" class="form-text text-danger"></span>
+            </div>
+            <div class="container">
+                <div class="row button">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">@Localizer.GetLocalizedHtmlString("btn_create")</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="list-group link">
+            <a class="text-primary" asp-action="Index">@Localizer.GetLocalizedHtmlString("a_back")</a>
+        </div>
+    </div>
+</div>

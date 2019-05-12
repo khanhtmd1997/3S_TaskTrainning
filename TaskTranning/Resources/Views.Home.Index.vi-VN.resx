@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Welcome To Page Admin">
+        <value>Chào mừng bạn đến với trang Admin</value>
+    </data>
+    <data name="Curriculum Vitae of Admin">
+        <value>Sơ yếu lí lịch của Admin</value>
+    </data>
+    <data name="TARGET">
+        <value>MỤC TIÊU</value>
+    </data>
+    <data name="Current goals">
+        <value>Mục Tiêu Hiện Tại</value>
+    </data>
+    <data name="Complete the company's 3s internship training">
+        <value>Hoàn thành khóa đào tạo thực tập của công ty 3s</value>
+    </data>
+    <data name="Get a college diploma">
+        <value>Nhận bằng tốt nghiệp đại học</value>
+    </data>
+    <data name="Future goals">
+        <value>Mục Tiêu Tương Lai</value>
+    </data>
+    <data name="Become a member of the 3s company">
+        <value>Trở thành thành viên của công ty 3s</value>
+    </data>
+    <data name="Strive for 2-3 years on leader of the company">
+        <value>Phấn đấu 2-3 năm làm lãnh đạo công ty</value>
+    </data>
+    <data name="EDUCATION">
+        <value>GIÁO DỤC</value>
+    </data>
+    <data name="PHU XUAN UNIVERSITY">
+        <value>ĐẠI HỌC PHÚ XUÂN</value>
+    </data>
+    <data name="specialized">
+        <value>chuyên ngành</value>
+    </data>
+    <data name="information technology engineer">
+        <value>công nghệ thông tin</value>
+    </data>
+    <data name="Degree">
+        <value>Trình </value>
+    </data>
+    Degree
+    <data name="Bachelor's degree">
+        <value>Cử nhân</value>
+    </data>
+    <data name="Graduation type: great">
+        <value>Loại tốt nghiệp: giỏi</value>
+    </data>
+    <data name="EXPERIENCE">
+        <value>KINH NGHIỆM</value>
+    </data>
+    <data name="Learn FontEnd two month">
+        <value>Hoc FontEnd 2 tháng</value>
+    </data>
+    <data name="Build news website with laravel, java,...">
+        <value>Xây dựng trang web tin tức với laravel, java, ...</value>
+    </data>
+    <data name="Learn language including: C, C++, C#, Java, PHP,..">
+        <value>Học ngôn ngữ bao gồm: C, C ++, C #, Java, PHP, ..</value>
+    </data>
+    <data name="Interns at information technology companies in Hue and Hanoi">
+        <value>Thực tập sinh tại các công ty công nghệ thông tin tại Huế và Hà Nội</value>
+    </data>
+    <data name="SKILL">
+        <value>KỸ NĂNG</value>
+    </data>
+    <data name="HTML 5, CSS,...">
+        <value>HTML 5, CSS,...</value>
+    </data>
+    <data name="Laravel">
+        <value>Laravel</value>
+    </data>
+    <data name="Dotnet MVC">
+        <value>Dotnet MVC</value>
+    </data>
+    <data name="ENGLISH">
+        <value>TIẾNG ANH</value>
+    </data>
+    <data name="Listen">
+        <value>Nghe</value>
+    </data>
+    <data name="Speak">
+        <value>Nói</value>
+    </data>
+    <data name="Read">
+        <value>Đọc</value>
+    </data>
+    <data name="Write">
+        <value>Viết</value>
+    </data>
+    <data name="INFORMATION TECHNOLOGY">
+        <value>CÔNG NGHỆ THÔNG TIN</value>
+    </data>
+    <data name="Word">
+        <value>Word</value>
+    </data>
+    <data name="Excel">
+        <value>Excel</value>
+    </data>
+    <data name="PowerPoint">
+        <value>PowerPoint</value>
+    </data>
+    <data name="OutLook">
+        <value>OutLook</value>
+    </data>
+    <data name="18/11 Thuy Tu, Tan Binh village, Thuan An town, Phu Vang district, Thua Thien Hue province">
+        <value>18/11 Thủy Tử, th Tân Bình, thị trấn Thuận An, huyện Phú Vang, tỉnh Thừa Thiên Huế</value>
+    </data>
+    
+</root>

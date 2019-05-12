@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Home Page"];
+    Layout = "_NavbarDataTable";
+}
+<h2>@ViewData["MyTitle"]</h2>
+<div class="container">
+    <div class="text-center" style="background-color: 	#daffb3">
+        <h1 class="display-4" style="margin-top: 50px; margin-bottom: 50px;">@Localizer["Welcome To Page Admin"]</h1>
+        <h2 style="margin-bottom: 100px; color: deepskyblue">@Localizer["Curriculum Vitae of Admin"]</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="~/image/logo.jpg" width="100" height="70"/>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-3"><img src="~/image/peole.png" width="50" height="50"/></div>
+                    <div class="col-9" style="line-height: 50px;">NGUYEN VAN KHANH</div>                  
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-3"><img src="~/image/cake.png" width="50" height="50"/></div>
+                    <div class="col-9" style="line-height: 50px;">16-02-1997</div>                 
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-3" style="line-height:72px;"><img src="~/image/address.png" width="50" height="50"/></div>
+                    <div class="col-9">@Localizer["18/11 Thuy Tu, Tan Binh village, Thuan An town, Phu Vang district, Thua Thien Hue province"]</div>                 
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-3"><img src="~/image/phone.png" width="50" height="50"/></div>
+                    <div class="col-9" style="line-height: 50px;">0364.606.406</div>                 
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-3"><img src="~/image/email.png" width="50" height="50"/></div>
+                    <div class="col-9">khanhtmd97@gmail.com  khanh.nv@3si.com.vn</div>                 
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-3"><img src="~/image/facebook.png" width="50" height="50"/></div>
+                    <div class="col-9" style="line-height: 50px;">https://www.facebook.com/vankhanh.nguyen.77964201</div>                 
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-6">
+                <h2 class="text-center text-primary">@Localizer["TARGET"]</h2>
+                <h4 class="text-left text-danger">@Localizer["Current goals"]</h4>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-11 text-left">
+                        <p>❀ @Localizer["Complete the company's 3s internship training"]</p>
+                        <p>❀ @Localizer["Get a college diploma"]</p>                 
+                    </div>
+                </div>
+                <h4 class="text-left text-danger">@Localizer["Future goals"]</h4>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-11 text-left">
+                        <p>❀ @Localizer["Become a member of the 3s company"]</p>
+                        <p>❀ @Localizer["Strive for 2-3 years on leader of the company"]</p>                 
+                    </div>
+                </div>
+                <hr style="border: 3px dashed;">
+                <h2 class="text-center text-primary">@Localizer["EDUCATION"]</h2>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-11 text-left">
+                        <p>❀ <b>@Localizer["PHU XUAN UNIVERSITY"]</b></p>
+                        <div class="row">
+                            <div class="col-7">
+                                <p>❀ <b>@Localizer["specialized"]</b> @Localizer["information technology engineer"]</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="text-right text-danger"><b>2015-2019</b></p>
+                            </div>
+                        </div>
+                        <p>❀<b> @Localizer["Degree"]:</b> @Localizer["Bachelor's degree"]</p>
+                        <p>❀<b> @Localizer["Graduation type"]:</b> @Localizer["great"]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 2px dotted;">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-center text-primary">@Localizer["SKILL"]</h2>
+                <div class="text-left">
+                    <p>❀ HTML 5, CSS,...</p>
+                    <p>❀ Laravel</p>
+                    <p>❀ Dotnet MVC</p>
+                    <p>❀ <b class="text-danger">@Localizer["ENGLISH"]</b></p>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p><b>@Localizer["Listen"]:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ☆ ☆
+                                        </div>
+                                        <div class="col-4">
+                                            <p><b>@Localizer["Speak"]:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ☆ ☆ ☆
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p><b>@Localizer["Read"]:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ☆ ☆
+                                        </div>
+                                        <div class="col-4">
+                                            <p><b>@Localizer["Write"]:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ☆ ☆
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>❀ <b class="text-danger">@Localizer["INFORMATION TECHNOLOGY"]</b></p>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p><b>Word:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+                                        <div class="col-4">
+                                            <p><b>Excel:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ☆ ☆
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p><b>PowerPoint:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+                                        <div class="col-4">
+                                            <p><b>OutLook:</b></p>                                            
+                                        </div>
+                                        <div class="col-8">
+                                            ★ ★ ★ ☆ ☆
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-6">
+                <h2 class="text-center text-primary">@Localizer["EXPERIENCE"]</h2>
+                <div class="text-left">
+                    <p>❀ @Localizer["Learn FontEnd two month"]</p>
+                    <p>❀ @Localizer["Build news website with laravel, java,..."]</p>
+                    <p>❀ @Localizer["Learn language including: C, C++, C#, Java, PHP,.."]</p>
+                    <p>❀ @Localizer["Interns at information technology companies in Hue and Hanoi"]</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

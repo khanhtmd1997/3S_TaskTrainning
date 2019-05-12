@@ -1,0 +1,37 @@
+﻿@model TaskTranning.ViewModels.BrandViewModel.BrandViewModel
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_edit");
+    Layout = "_NavbarDataTable";
+}
+<div class="formbody">
+    <h1>@Localizer.GetLocalizedHtmlString("t_edit")</h1>
+    <div id="form">
+        @if (ViewData["errorMessage"] != null)
+        {
+            <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5>
+        }
+        <form asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label asp-for="BrandName">@Localizer.GetLocalizedHtmlString("lbl_brandName") * :</label>
+                <input asp-for="BrandName" type="text" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_brandName")/>
+                <span asp-validation-for="BrandName" class="form-text text-danger"></span>
+            </div>
+            
+    
+            <div class="container">
+                <div class="row button">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">@Localizer.GetLocalizedHtmlString("btn_edit")</button>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
+        <div class="list-group link">
+            <a class="text-primary" asp-action="Index">@Localizer.GetLocalizedHtmlString("a_back")</a>
+        </div>
+    </div>
+</div>

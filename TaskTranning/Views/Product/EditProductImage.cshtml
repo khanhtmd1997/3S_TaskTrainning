@@ -1,0 +1,36 @@
+﻿@* @model TaskTranning.ViewModels.ProductViewModel.EditProductImageViewModel *@
+@* @using Microsoft.AspNetCore.Mvc.Localization *@
+@* @inject IViewLocalizer Localizer *@
+@* *@
+@* @{ *@
+@*     ViewBag.Title = "Edit Product - TaskTrainning"; *@
+@*     Layout = "_NavbarDataTable"; *@
+@* } *@
+@* @if (ViewData["errorMessage"] != null) *@
+@* { *@
+@*     <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5> *@
+@* } *@
+@* <div class="formbody"> *@
+@*     <h1>@Localizer["Edit Image Product Page"]</h1> *@
+@*     <div id="form"> *@
+@*         <form asp-action="EditProductImage" method="post" enctype="multipart/form-data"> *@
+@*             <div class="form-group"> *@
+@*                 <div class="form-group"> *@
+@*                     <label asp-for="Picture">@Localizer["Image"]</label> *@
+@*                     <input asp-for="Picture" type="file" class="form-control"/> *@
+@*                     <span asp-validation-for="Picture" class="form-text text-danger"></span> *@
+@*                 </div> *@
+@*                 <div class="container"> *@
+@*                     <div class="row button"> *@
+@*                         <div class="col text-center"> *@
+@*                             <button type="submit" class="btn btn-primary">@Localizer["Edit"]</button> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </form> *@
+@*         <div class="list-group link"> *@
+@*             <a class="text-primary" asp-action="Index">@Localizer["Back to list Product"]</a> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@

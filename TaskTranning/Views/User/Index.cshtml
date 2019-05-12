@@ -1,0 +1,123 @@
+﻿@model List<TaskTranning.ViewModels.UserViewModel>
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_user");
+    Layout = "_NavbarDataTable";
+}
+@* <form class="form-inline" style="float: right; margin-bottom: 30px;"> *@
+@*     @using (Html.BeginForm("Index", "User", FormMethod.Get)) *@
+@*     { *@
+@*         @Html.TextBox("search", ViewBag.CurrentFilter as string, new {@class = "form-control", @placeholder = "Search"}) *@
+@*         <button class="btn btn-outline-success" type="submit">@Localizer["Search"]</button> *@
+@*     } *@
+@* </form> *@
+﻿ 
+        
+     @if (TempData["succcessMessage"] != null)
+     {
+         <h5 class="text-danger text-center">@TempData["succcessMessage"]</h5>
+     }
+<div class="sectionContent">
+    <h3 class="text-center">@Localizer.GetLocalizedHtmlString("t_user")</h3>
+    @if (ViewBag.Count == 0)
+    {
+        <p class="text-right">@Localizer.GetLocalizedHtmlString("p_error_table") - <a asp-action="Create"><img src='~/image/create.png' width='35'/></a></p>
+    }
+    else
+    {
+        <p class="text-right">@Localizer.GetLocalizedHtmlString("p_find"): @ViewBag.Count @Localizer.GetLocalizedHtmlString("p_user") - <a asp-action="Create"><img src='~/image/create.png' width='35'/></a></p>
+    }
+    <table id="table_id" class="table table-bordered">
+        <thead class="text-center">
+        <tr>
+            <th>@Localizer.GetLocalizedHtmlString("th_email")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_password")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_fullName")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_phone")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_picture")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_address")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_isActive")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_storeName")</th>
+            <th>@Localizer.GetLocalizedHtmlString("th_action")</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item  in Model)
+        {
+                <tr>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td >
+                    <td scope="row">
+                        <div id="modal-placeholder"></div>
+                        <button type="button" class="btn btn-primary" data-toggle="ajax-modal" data-target="#edit-password" data-url="@Url.Action("EditPassword", new {id = @item.Id})">
+                            <img src="~/image/key.png" width="20"/>
+                        </button>
+
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td scope="row">
+                        <img src="/images/@Html.DisplayFor(modelItem => item.Picture)" width="50" height="50"/>
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.IsActive)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Store.StoreName)
+                    </td>
+                    <td scope="row">
+                        <a asp-action="Edit" asp-route-id="@item.Id"><img src='~/image/edit.png' width='40'/></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('@Localizer.GetLocalizedHtmlString("msg_del")')">
+                            <img src='~/image/delete.png'width='40'/>
+                        </a>
+                    </td>
+                </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<script>
+    $(function () {
+        var placeholderElement = $('#modal-placeholder');
+
+        $('button[data-toggle="ajax-modal"]').click(function (event) {
+            var url = $(this).data('url');
+            $.get(url).done(function (data) {
+                placeholderElement.html(data);
+                placeholderElement.find('.modal').modal('show');
+            });
+        });
+
+        placeholderElement.on('click', '[data-save="modal"]', function (event) {
+            event.preventDefault();
+
+            var form = $(this).parents('.modal').find('form');
+            var actionUrl = form.attr('action');
+            var dataToSend = form.serialize();
+
+            $.post(actionUrl, dataToSend).done(function (data) {
+                var newBody = $('.modal-body', data);
+                placeholderElement.find('.modal-body').replaceWith(newBody);
+
+                var isValid = newBody.find('[name="IsValid"]').val() == 'True';
+                if (isValid) {
+                    $('#modal-placeholder').text('Successfully!');
+                    placeholderElement.find('.modal').modal('hide');
+                }
+            });
+        });
+    });
+</script>
+
+
+
+

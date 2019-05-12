@@ -1,0 +1,29 @@
+﻿
+@model TaskTranning.ViewModels.LoginViewModel
+
+@using TaskTranning.Resources
+@inject ResourcesServices Localizer
+@{
+    ViewBag.Title = Localizer.GetLocalizedHtmlString("t_login");
+    Layout = "_Layout";
+}
+@* <h2>@Localizer["Login"]</h2> *@
+@if (ViewData["errorMessage"] != null)
+{
+    <h5 class="text-danger text-center">@ViewData["errorMessage"]</h5>
+}
+<form method="post" asp-action="LoginForm" asp-controller="User" class="form">
+    <div class="wrap">
+        <div class="avatar">
+            <img src="~/image/logo.jpg">
+        </div>
+        <input asp-for="Email" type="email" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_email")/>
+        <span asp-validation-for="Email"  class="text-warning"></span>
+        <div class="bar">
+            <i></i>
+        </div>
+        <input asp-for="PassWord" type="password" class="form-control" placeholder=@Localizer.GetLocalizedHtmlString("pld_password")/>
+        <span asp-validation-for="PassWord" class="text-warning"></span>
+        <button>@Localizer.GetLocalizedHtmlString("btn_login")</button>
+    </div>
+</form>

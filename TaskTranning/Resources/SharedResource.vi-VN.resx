@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msg_del" xml:space="preserve">
+    <value>Bạn chắc chắn rằng muốn xóa nó?</value>
+  </data>
+  <data name="p_customer" xml:space="preserve">
+    <value>Khách Hàng</value>
+  </data>
+  <data name="p_error_table" xml:space="preserve">
+    <value>KHÔNG CÓ DỮ LIỆU TRONG BẢNG</value>
+  </data>
+  <data name="p_find" xml:space="preserve">
+    <value>Tìm Thấy</value>
+  </data>
+  <data name="th_action" xml:space="preserve">
+    <value>Thao Tác</value>
+  </data>
+  <data name="th_address" xml:space="preserve">
+    <value>Địa Chỉ</value>
+  </data>
+  <data name="th_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="th_firstName" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="th_lastName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="th_phone" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="th_zipCode" xml:space="preserve">
+    <value>Mã Bưu Chính</value>
+  </data>
+  <data name="t_customer" xml:space="preserve">
+    <value>Trang Khách Hàng</value>
+  </data>
+  <data name="a_back" xml:space="preserve">
+    <value>Quay Lại Danh Sách</value>
+  </data>
+  <data name="a_brand" xml:space="preserve">
+    <value>NHÃN HIỆU</value>
+  </data>
+  <data name="a_category" xml:space="preserve">
+    <value>DANH MỤC</value>
+  </data>
+  <data name="a_customer" xml:space="preserve">
+    <value>KHÁCH HÀNG</value>
+  </data>
+  <data name="a_home" xml:space="preserve">
+    <value>TRANG CHỦ</value>
+  </data>
+  <data name="a_login" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
+  <data name="a_logOut" xml:space="preserve">
+    <value>Đăng Xuất</value>
+  </data>
+  <data name="a_product" xml:space="preserve">
+    <value>SẢN PHẨM</value>
+  </data>
+  <data name="a_stock" xml:space="preserve">
+    <value>CỔ PHẦN</value>
+  </data>
+  <data name="a_store" xml:space="preserve">
+    <value>CỬA HÀNG</value>
+  </data>
+  <data name="a_user" xml:space="preserve">
+    <value>TÀI KHOẢN</value>
+  </data>
+  <data name="btn_close" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="btn_create" xml:space="preserve">
+    <value>Tạo</value>
+  </data>
+  <data name="btn_edit" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="btn_login" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
+  <data name="btn_save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="h4_hello" xml:space="preserve">
+    <value>Xin Chào</value>
+  </data>
+  <data name="lbl_address" xml:space="preserve">
+    <value>Địa Chỉ</value>
+  </data>
+  <data name="lbl_brandName" xml:space="preserve">
+    <value>Tên Nhãn Hiệu</value>
+  </data>
+  <data name="lbl_categoryName" xml:space="preserve">
+    <value>Tên Danh Mục</value>
+  </data>
+  <data name="lbl_city" xml:space="preserve">
+    <value>Thành Phố</value>
+  </data>
+  <data name="lbl_confirmPassword" xml:space="preserve">
+    <value>Nhập Lại Mật Khẩu</value>
+  </data>
+  <data name="lbl_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lbl_firstName" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="lbl_fullName" xml:space="preserve">
+    <value>Họ và Tên</value>
+  </data>
+  <data name="lbl_isActive" xml:space="preserve">
+    <value>Kích Hoạt?</value>
+  </data>
+  <data name="lbl_lastName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="lbl_listPrice" xml:space="preserve">
+    <value>Bảng Giá</value>
+  </data>
+  <data name="lbl_modelYear" xml:space="preserve">
+    <value>Năm Mô Hình</value>
+  </data>
+  <data name="lbl_newPassword" xml:space="preserve">
+    <value>Mật Khẩu Mới</value>
+  </data>
+  <data name="lbl_password" xml:space="preserve">
+    <value>Mật Khẩu</value>
+  </data>
+  <data name="lbl_phone" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="lbl_picture" xml:space="preserve">
+    <value>Ảnh</value>
+  </data>
+  <data name="lbl_productName" xml:space="preserve">
+    <value>Tên Sản Phẩm</value>
+  </data>
+  <data name="lbl_quantity" xml:space="preserve">
+    <value>Số Lượng</value>
+  </data>
+  <data name="lbl_state" xml:space="preserve">
+    <value>Bang</value>
+  </data>
+  <data name="lbl_storeName" xml:space="preserve">
+    <value>Tên Cửa Hàng</value>
+  </data>
+  <data name="lbl_street" xml:space="preserve">
+    <value>Đường</value>
+  </data>
+  <data name="lbl_zipCode" xml:space="preserve">
+    <value>Mã Bưu Chính</value>
+  </data>
+  <data name="msg_DeleteBrandError" xml:space="preserve">
+    <value>Xóa  Nhãn Hiệu Thất Bại</value>
+  </data>
+  <data name="msg_DeleteBrandSuccess" xml:space="preserve">
+    <value>Xóa  Nhãn Hiệu Thành Công</value>
+  </data>
+  <data name="msg_DeleteCategoryError" xml:space="preserve">
+    <value>Xóa  Danh Mục Thất Bại</value>
+  </data>
+  <data name="msg_DeleteCategorySuccess" xml:space="preserve">
+    <value>Xóa  Danh Mục Thành Công</value>
+  </data>
+  <data name="msg_DeleteCustomerError" xml:space="preserve">
+    <value>Xóa  Khách Hàng Thất Bại</value>
+  </data>
+  <data name="msg_DeleteCustomerSucces" xml:space="preserve">
+    <value>Xóa  Khách Hàng Thành Công</value>
+  </data>
+  <data name="msg_DeleteProductError" xml:space="preserve">
+    <value>Xóa  Sản Phẩm Thất Bại</value>
+  </data>
+  <data name="msg_DeleteProductSuccess" xml:space="preserve">
+    <value>Xóa  Sản Phẩm Thành Công</value>
+  </data>
+  <data name="msg_DeleteStockError" xml:space="preserve">
+    <value>Xóa  Cổ Phần Thất Bại</value>
+  </data>
+  <data name="msg_DeleteStockSuccess" xml:space="preserve">
+    <value>Xóa  Cổ Phần Thành Công</value>
+  </data>
+  <data name="msg_DeleteStoreError" xml:space="preserve">
+    <value>Xóa  Cửa Hàng Thất Bại</value>
+  </data>
+  <data name="msg_DeleteStoreSuccess" xml:space="preserve">
+    <value>Xóa  Cửa Hàng Thành Công</value>
+  </data>
+  <data name="msg_DeleteUserError" xml:space="preserve">
+    <value>Xóa  Tài Khoản Thất Bại</value>
+  </data>
+  <data name="msg_DeleteUserSuccess" xml:space="preserve">
+    <value>Xóa  Tài Khoản Thành Công</value>
+  </data>
+  <data name="msg_EditBrandError" xml:space="preserve">
+    <value>Sửa  Nhãn Hiệu Thất Bại</value>
+  </data>
+  <data name="msg_EditBrandSuccess" xml:space="preserve">
+    <value>Sửa  Nhãn Hiệu Thành Công</value>
+  </data>
+  <data name="msg_EditCategoryError" xml:space="preserve">
+    <value>Sửa  Danh Mục Thất Bại</value>
+  </data>
+  <data name="msg_EditCategorySuccess" xml:space="preserve">
+    <value>Sửa  Danh Mục Thành Công</value>
+  </data>
+  <data name="msg_EditCustomerError" xml:space="preserve">
+    <value>Sửa  Khách Hàng Thất Bại</value>
+  </data>
+  <data name="msg_EditCustomerSucces" xml:space="preserve">
+    <value>Sửa  Khách Hàng Thành Công</value>
+  </data>
+  <data name="msg_EditProductError" xml:space="preserve">
+    <value>Sửa  Sản Phẩm Thất Bại</value>
+  </data>
+  <data name="msg_EditProductSuccess" xml:space="preserve">
+    <value>Sửa  Sản Phẩm Thành Công</value>
+  </data>
+  <data name="msg_EditStockError" xml:space="preserve">
+    <value>Sửa  Cổ Phần Thất Bại</value>
+  </data>
+  <data name="msg_EditStockSuccess" xml:space="preserve">
+    <value>Sửa  Cổ Phần Thành Công</value>
+  </data>
+  <data name="msg_EditStoreError" xml:space="preserve">
+    <value>Sửa  Cửa Hàng Thất Bại</value>
+  </data>
+  <data name="msg_EditStoreSuccess" xml:space="preserve">
+    <value>Sửa  Cửa Hàng Thành Công</value>
+  </data>
+  <data name="msg_EditUserError" xml:space="preserve">
+    <value>Sửa  Tài Khoản Thất Bại</value>
+  </data>
+  <data name="msg_EditUserPasswordError" xml:space="preserve">
+    <value>Sửa Mật Khẩu Tài Khoản Thất Bại</value>
+  </data>
+  <data name="msg_EditUserPasswordSuccess" xml:space="preserve">
+    <value>Sửa Mật Khẩu Tài Khoản Thành Công</value>
+  </data>
+  <data name="msg_EditUserSuccess" xml:space="preserve">
+    <value>Sửa  Tài Khoản Thành Công</value>
+  </data>
+  <data name="msg_ErrorLogin" xml:space="preserve">
+    <value>Đăng Nhập Thất Bại! Mật Khẩu Hoặc Password Sai</value>
+  </data>
+  <data name="msg_NewBrandError" xml:space="preserve">
+    <value>Thêm Nhãn Hiệu Thất Bại</value>
+  </data>
+  <data name="msg_NewBrandSuccess" xml:space="preserve">
+    <value>Thêm Nhãn Hiệu Thành Công</value>
+  </data>
+  <data name="msg_NewCategoryError" xml:space="preserve">
+    <value>Thêm Danh Mục Thất Bại</value>
+  </data>
+  <data name="msg_NewCategorySuccess" xml:space="preserve">
+    <value>Thêm Danh Mục Thành Công</value>
+  </data>
+  <data name="msg_NewCustomerError" xml:space="preserve">
+    <value>Thêm Khách Hàng Thất Bại</value>
+  </data>
+  <data name="msg_NewCustomerSuccess" xml:space="preserve">
+    <value>Thêm Khách Hàng Thành Công</value>
+  </data>
+  <data name="msg_NewProductError" xml:space="preserve">
+    <value>Thêm Sản Phẩm Thất Bại</value>
+  </data>
+  <data name="msg_NewProductSuccess" xml:space="preserve">
+    <value>Thêm Sản Phẩm Thành Công</value>
+  </data>
+  <data name="msg_NewStockError" xml:space="preserve">
+    <value>Thêm Cổ Phần Thất Bại</value>
+  </data>
+  <data name="msg_NewStockSuccess" xml:space="preserve">
+    <value>Thêm Cổ Phần Thành Công</value>
+  </data>
+  <data name="msg_NewStoreError" xml:space="preserve">
+    <value>Thêm Cửa Hàng Thất Bại</value>
+  </data>
+  <data name="msg_NewStoreSuccess" xml:space="preserve">
+    <value>Thêm Cửa Hàng Thành Công</value>
+  </data>
+  <data name="msg_NewUserError" xml:space="preserve">
+    <value>Thêm Tài Khoản Thất Bại</value>
+  </data>
+  <data name="msg_NewUserSuccess" xml:space="preserve">
+    <value>Thêm Tài Khoản Thành Công</value>
+  </data>
+  <data name="pld_address" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ</value>
+  </data>
+  <data name="pld_brandName" xml:space="preserve">
+    <value>Vui lòng nhập tên nhãn hiệu</value>
+  </data>
+  <data name="pld_categoryName" xml:space="preserve">
+    <value>Vui lòng nhập tên danh mục</value>
+  </data>
+  <data name="pld_city" xml:space="preserve">
+    <value>Vui lòng nhập thành phố</value>
+  </data>
+  <data name="pld_confirmPassword" xml:space="preserve">
+    <value>Vui lòng nhập lại mật khẩu</value>
+  </data>
+  <data name="pld_email" xml:space="preserve">
+    <value>Vui lòng nhập email</value>
+  </data>
+  <data name="pld_firstName" xml:space="preserve">
+    <value>Vui lòng nhập họ</value>
+  </data>
+  <data name="pld_fullname" xml:space="preserve">
+    <value>Vui lòng nhập họ và tên</value>
+  </data>
+  <data name="pld_lastName" xml:space="preserve">
+    <value>Vui lòng nhập tên</value>
+  </data>
+  <data name="pld_listPrice" xml:space="preserve">
+    <value>Bảng Giá</value>
+  </data>
+  <data name="pld_modelYear" xml:space="preserve">
+    <value>Vui lòng nhập năm mô hình</value>
+  </data>
+  <data name="pld_newPassword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu mới</value>
+  </data>
+  <data name="pld_password" xml:space="preserve">
+    <value>Vui lòng nhập password</value>
+  </data>
+  <data name="pld_pasword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu</value>
+  </data>
+  <data name="pld_phone" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại</value>
+  </data>
+  <data name="pld_productName" xml:space="preserve">
+    <value>Vui lòng nhập tên sản phẩm</value>
+  </data>
+  <data name="pld_quantity" xml:space="preserve">
+    <value>Vui lòng nhập số lượng</value>
+  </data>
+  <data name="pld_storeName" xml:space="preserve">
+    <value>Vui lòng nhập tên cửa hàng</value>
+  </data>
+  <data name="pld_street" xml:space="preserve">
+    <value>Vui lòng nhập đường</value>
+  </data>
+  <data name="pld_zipCode" xml:space="preserve">
+    <value>Vui lòng nhập mã bưu chính</value>
+  </data>
+  <data name="p_brand" xml:space="preserve">
+    <value>Nhãn Hiệu</value>
+  </data>
+  <data name="p_category" xml:space="preserve">
+    <value>Danh Mục</value>
+  </data>
+  <data name="p_language" xml:space="preserve">
+    <value>Ngôn Ngữ</value>
+  </data>
+  <data name="p_product" xml:space="preserve">
+    <value>Sản Phẩm</value>
+  </data>
+  <data name="p_stock" xml:space="preserve">
+    <value>Cổ Phần</value>
+  </data>
+  <data name="p_store" xml:space="preserve">
+    <value>Cửa Hàng</value>
+  </data>
+  <data name="p_user" xml:space="preserve">
+    <value>Tài Khoản</value>
+  </data>
+  <data name="sp_example" xml:space="preserve">
+    <value>Ví dụ</value>
+  </data>
+  <data name="sp_home" xml:space="preserve">
+    <value>TRANG CHỦ</value>
+  </data>
+  <data name="sp_management" xml:space="preserve">
+    <value>Quản Lý</value>
+  </data>
+  <data name="th_brandName" xml:space="preserve">
+    <value>Tên Nhãn Hiệu</value>
+  </data>
+  <data name="th_categoryName" xml:space="preserve">
+    <value>Tên Danh Mục</value>
+  </data>
+  <data name="th_city" xml:space="preserve">
+    <value>Thành Phố</value>
+  </data>
+  <data name="th_fullName" xml:space="preserve">
+    <value>Họ và Tên</value>
+  </data>
+  <data name="th_isActive" xml:space="preserve">
+    <value>Kích Hoạt?</value>
+  </data>
+  <data name="th_listPrice" xml:space="preserve">
+    <value>Bảng Giá</value>
+  </data>
+  <data name="th_modelYear" xml:space="preserve">
+    <value>Năm Mô Hình</value>
+  </data>
+  <data name="th_picture" xml:space="preserve">
+    <value>Ảnh</value>
+  </data>
+  <data name="th_productName" xml:space="preserve">
+    <value>Tên Sản Phẩm</value>
+  </data>
+  <data name="th_quantity" xml:space="preserve">
+    <value>Số Lượng</value>
+  </data>
+  <data name="th_state" xml:space="preserve">
+    <value>Bang</value>
+  </data>
+  <data name="th_storeName" xml:space="preserve">
+    <value>Tên Cửa Hàng</value>
+  </data>
+  <data name="th_street" xml:space="preserve">
+    <value>Đường</value>
+  </data>
+  <data name="t_brand" xml:space="preserve">
+    <value>Trang Nhãn Hiệu</value>
+  </data>
+  <data name="t_category" xml:space="preserve">
+    <value>Trang Danh Mục</value>
+  </data>
+  <data name="t_create" xml:space="preserve">
+    <value>Trang Tạo</value>
+  </data>
+  <data name="t_edit" xml:space="preserve">
+    <value>Trang Sửa</value>
+  </data>
+  <data name="t_login" xml:space="preserve">
+    <value>Trang Đăng Nhập</value>
+  </data>
+  <data name="t_product" xml:space="preserve">
+    <value>Trang Sản Phẩm</value>
+  </data>
+  <data name="t_stock" xml:space="preserve">
+    <value>Trang Cổ Phần</value>
+  </data>
+  <data name="t_store" xml:space="preserve">
+    <value>Trang Cửa Hàng</value>
+  </data>
+  <data name="t_user" xml:space="preserve">
+    <value>Trang Tài Khoản</value>
+  </data>
+  <data name="vld_alreadyexists" xml:space="preserve">
+    <value>Đã tồn tại</value>
+  </data>
+  <data name="vld_equalpassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu phải giống mật khẩu mới</value>
+  </data>
+  <data name="vld_formatemail" xml:space="preserve">
+    <value>Phải được định dạng theo email</value>
+  </data>
+  <data name="vld_letterandnumber" xml:space="preserve">
+    <value>Bao gồm cả chữ và số</value>
+  </data>
+  <data name="vld_max100characters" xml:space="preserve">
+    <value>Tối đa 100 kí tự</value>
+  </data>
+  <data name="vld_min6characters" xml:space="preserve">
+    <value>Tối thiểu 6 kí tự</value>
+  </data>
+  <data name="vld_notnull" xml:space="preserve">
+    <value>Không được bỏ trống</value>
+  </data>
+  <data name="vld_toonefrommfifty" xml:space="preserve">
+    <value>Nằm trong khoản từ 1 đến 50 kí tự</value>
+  </data>
+  <data name="vld_toonefromonehundred" xml:space="preserve">
+    <value>Nằm trong khoản từ 1 đến 100 kí tự</value>
+  </data>
+</root>
